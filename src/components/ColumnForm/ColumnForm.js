@@ -6,7 +6,7 @@ const ColumnForm = props => {
     const [value, setValue] = useState('');
     const handleSubmit = e => {
         e.preventDefault();
-        props.handleSubmit({ title: value });
+        props.action({ title: value });
         setValue('');
     }
 
